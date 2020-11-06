@@ -22,7 +22,7 @@ export const Home = () => (
 			<h1>ABOUT US</h1>
 		</div>
 		<div className="text-right mt-5 mr-5">
-			<h1>WHY SYMP-WEB?</h1>
+			<h1>WHY S/W?</h1>
 		</div>
 		<div className="text-left mt-5 ml-5">
 			<h1>CONTACT US!</h1>
