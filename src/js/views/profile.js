@@ -1,8 +1,10 @@
 import React from "react";
+import AboutUs from "../../img/aboutUs.jpg";
 import "../../styles/home.scss";
 
 export const Profile = () => {
-    return(
-        <img src="..." alt="..." class="rounded-circle"></img>
-    );
+    
+	return (
+		
+	);
 };
