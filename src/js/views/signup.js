@@ -24,6 +24,15 @@ export const Signup = () => {
                 <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                 <label className="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
+            <div class="dropdown">
+                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account Type
+                </button>
+                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a className="dropdown-item" href="#">Freelancer</a>
+                    <a className="dropdown-item" href="#">Recruiter / Company</a>
+                </div>
+            </div>
             <button type="submit" className="btn btn-primary">Next</button>
         </form>
     );
