@@ -42,9 +42,15 @@ export const Mock = () => {
 					<div className="container">
 						<h1 className="display-4">My Projects</h1>
 						<ul>
-							<li>SYMP-WEB</li>
-							<li>To-do list</li>
-							<li>Star Wars</li>
+							<li>
+								<h4>SYMP-WEB</h4>
+							</li>
+							<li>
+								<h4>To-do list</h4>
+							</li>
+							<li>
+								<h4>Star Wars</h4>
+							</li>
 						</ul>
 					</div>
 				</div>
