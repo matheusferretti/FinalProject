@@ -1,7 +1,6 @@
 import React from "react";
 import logoDraft from "../../img/LogoDraft.jpg";
 import AboutUs from "../../img/aboutUs.jpg";
-import { Link } from "react-router-dom";
 import "../../styles/home.scss";
 
 export const Home = () => (
@@ -15,14 +14,9 @@ export const Home = () => (
 					placeholder="Search for jobs, companies, or prospects"
 					aria-label="Search"
 				/>
-				<Link to="/profile">
-					<span className="btn btn-primary btn-lg" href="#" role="button">
-						Profile Page
-					</span>
-				</Link>
-				{/* <button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
+				<button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
 					Search
-				</button> */}
+				</button>
 			</form>
 		</div>
 		<div className="text-left d-inline">

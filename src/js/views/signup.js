@@ -26,25 +26,8 @@ export const Signup = () => {
 				<label htmlFor="exampleInputPassword1">Password</label>
 				<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
 			</div>
-			<div className="dropdown">
-				<button
-					className="btn btn-secondary dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false">
-					Account Type
-				</button>
-				<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a className="dropdown-item" href="#">
-						Freelancing
-					</a>
-					<a className="dropdown-item" href="#">
-						Recruitment
-					</a>
-				</div>
-			</div>
+			<input type="checkbox" id="freelancer" name="freelancer" value="freelancer" placeholder="freelancer" />
+			<input type="checkbox" id="recruiter" name="recruiter" value="recruiter" placeholder="recruiter" />
 			<button type="submit" className="btn btn-primary">
 				Next
 			</button>

@@ -4,19 +4,61 @@ const getState = ({ getStore, getActions, setStore }) => {
 			profile: [
 				{
 					name: "Matheus",
-					type: "recruiter"
+					type: "user"
 				}
 			],
-			demo: [
+			freelancers: [
 				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
+					name: "FIRST",
+					qualifications: "front-end",
+					technologies: "html"
 				},
 				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
+					name: "SECOND",
+					qualifications: "front-end",
+					technologies: "javascript"
+				},
+				{
+					name: "THIRD",
+					qualifications: "back-end",
+					technologies: "java"
+				},
+				{
+					name: "FOURTH",
+					qualifications: "front-end",
+					technologies: "css"
+				},
+				{
+					name: "5TH",
+					qualifications: "back-end",
+					technologies: "mysql"
+				}
+			],
+			jobs: [
+				{
+					title: "python developer",
+					skills: "python",
+					companyType: "tech"
+				},
+				{
+					title: "back-end developer",
+					skills: "mysql",
+					companyType: "tech"
+				},
+				{
+					title: "front-end developer",
+					skills: "html",
+					companyType: "retail"
+				},
+				{
+					title: "react developer",
+					skills: "react",
+					companyType: "hr"
+				},
+				{
+					title: "full-stack dev",
+					skills: "react",
+					companyType: "tech"
 				}
 			]
 		},

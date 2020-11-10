@@ -8,7 +8,9 @@ import { Single } from "./views/single";
 import { Login } from "./views/login";
 import { Profile } from "./views/profile";
 import { Signup } from "./views/signup";
+import { Signup2 } from "./views/signup2";
 import { Search } from "./views/search";
+import { Mock } from "./views/mock";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -27,14 +29,16 @@ const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/home" component={Home} />
-						{/* <Route exact path="/demo">
+						<Route exact path="/demo">
 							<Demo />
-						</Route> */}
+						</Route>
 						<Route exact path="/signup" component={Signup} />
+						<Route exact path="/signup2" component={Signup2} />
 						<Route exact path="/profile" component={Profile} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/single/:theid" component={Single} />
 						<Route exact path="/search" component={Search} />
+						<Route exact path="/mock" component={Mock} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
