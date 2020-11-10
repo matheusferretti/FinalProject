@@ -8,6 +8,7 @@ import { Single } from "./views/single";
 import { Login } from "./views/login";
 import { Profile } from "./views/profile";
 import { Signup } from "./views/signup";
+import { Search } from "./views/search";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -33,6 +34,7 @@ const Layout = () => {
 						<Route exact path="/profile" component={Profile} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/single/:theid" component={Single} />
+						<Route exact path="/search" component={Search} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
