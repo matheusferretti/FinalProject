@@ -1,12 +1,10 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			profile: [
-				{
-					name: "Matheus",
-					type: "user"
-				}
-			],
+			profile: {
+				name: "Matheus",
+				type: "user"
+			},
 			freelancers: [
 				{
 					name: "FIRST",
@@ -90,10 +88,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				//reset the global store
 				setStore({ demo: demo });
 			},
-			login: (username, password, history) => {
+			login: (email, password, history) => {
 				//get the store
 				const store = getStore();
 
+				//this is where I fetch, and only will set the store if after fetching I get a 200
 				//reset the global store
 				setStore({
 					currentUser: {
