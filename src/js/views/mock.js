@@ -1,12 +1,12 @@
 import React from "react";
-import logoDraft from "../../img/LogoDraft.jpg";
+import mat2 from "../../img/mat2.png";
 import "../../styles/home.scss";
 
 export const Mock = () => {
 	return (
 		<div>
 			<div className="card float-left m-5" style={{ width: "18rem" }}>
-				<img src={logoDraft} className="rounded-circle" alt="" />
+				<img src={mat2} className="img-thumbnail" style={{ width: "285px", height: "285px" }} alt="" />
 				<div className="card-body">
 					<h5 className="card-title">Matheus Ferretti</h5>
 					<p className="card-text">Python Developer</p>
@@ -30,11 +30,9 @@ export const Mock = () => {
 					<div className="container">
 						<h1 className="display-5">Welcome to my page!</h1>
 						<p className="lead">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							FIU Economics Alumnus with a background in Software Devlopment, I am a proud Brazilian
+							living in America looking for oportunities to cooperate in a team orientend environment and
+							preach the pursuit of knowledge to whoever I work with.
 						</p>
 					</div>
 				</div>
@@ -45,12 +43,30 @@ export const Mock = () => {
 							<li>
 								<h4>SYMP-WEB</h4>
 							</li>
+							<p>
+								This project was mainly developed to provide a simple and efficient platform for web
+								developers to embrace freelance opportunities that extend across the entire world. The
+								sudden increase of remote job opportunities opens a new gate for aspiring developers and
+								it is a fact that freelancing jobs will be the beacon of productivity in the near
+								future. Although this project is still at its embrionic stage, I have created this
+								project with the intention to help millions of people and will be constantly developing
+								it to make it available for generations to come.
+							</p>
 							<li>
 								<h4>To-do list</h4>
 							</li>
+							<p>
+								The to-do list is a simple app that I have created during my 4Geeks bootcamp and I have
+								taken it upon myself to work on the front-end and make it look good.
+							</p>
 							<li>
 								<h4>Star Wars</h4>
 							</li>
+							<p>
+								This project is also another one of the 4Geeks projects and I also enjoyed the outcome.
+								Just as I will continue working on the to-do list, I also intend to contine working on
+								this star wars project.
+							</p>
 						</ul>
 					</div>
 				</div>
@@ -61,24 +77,27 @@ export const Mock = () => {
 							<li>
 								<strong>Account Manager</strong>, Kaseya
 							</li>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.
-							</p>
+							<ul>
+								<li>Sold software to other companies</li>
+								<li>Consulted clients on best software available in the market</li>
+								<li>Helped the BI team with analytical sales projects</li>
+							</ul>
 							<li>
-								<strong>Account Manager</strong>, Microsoft
+								<strong>Inventory Specialist</strong>, Azamara
 							</li>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.
-							</p>
+							<ul>
+								<li>Created shore excursions</li>
+								<li>Worked with tour operators on creation of new tours</li>
+								<li>Extended contract to tour operators</li>
+							</ul>
 							<li>
-								<strong>Account Manager</strong>, Apple
+								<strong>Corporate Strategy Analyst</strong>, IBERIABANK
 							</li>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua.
-							</p>
+							<ul>
+								<li>Worked on excel sheets</li>
+								<li>Determined client turnover rate based on data</li>
+								<li>Assisted in new technology vendor selection</li>
+							</ul>
 						</ul>
 					</div>
 				</div>
