@@ -25,7 +25,7 @@ export const Mock = () => {
 					<li className="list-group-item">Open for job opportunities</li>
 				</ul>
 			</div>
-			<div className="container">
+			<div className="container mt-5">
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
 						<h1 className="display-5">Welcome to my page!</h1>

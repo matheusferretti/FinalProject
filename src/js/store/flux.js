@@ -60,7 +60,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 					skills: "react",
 					companyType: "tech"
 				}
-			]
+			],
+			currentUser: {
+				email: "matheusferretti96@gmail.com",
+				token: null
+			}
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -85,6 +89,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+			login: (username, password, history) => {
+				//get the store
+				const store = getStore();
+
+				//reset the global store
+				setStore({
+					currentUser: {
+						email: "matheusferretti96@gmail.com",
+						token: "e1e2e3"
+					}
+				});
+				history.push("/home");
 			}
 		}
 	};
