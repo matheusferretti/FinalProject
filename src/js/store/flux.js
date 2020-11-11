@@ -7,27 +7,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			freelancers: [
 				{
-					name: "FIRST",
+					name: "Matheus",
 					qualifications: "front-end",
 					technologies: "html"
 				},
 				{
-					name: "SECOND",
+					name: "Thiago",
 					qualifications: "front-end",
 					technologies: "javascript"
 				},
 				{
-					name: "THIRD",
+					name: "Natasha",
 					qualifications: "back-end",
 					technologies: "java"
 				},
 				{
-					name: "FOURTH",
+					name: "Sasha",
 					qualifications: "front-end",
 					technologies: "css"
 				},
 				{
-					name: "5TH",
+					name: "Jaqueline",
 					qualifications: "back-end",
 					technologies: "mysql"
 				}
@@ -101,6 +101,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 				});
 				history.push("/home");
+			},
+			search: (jobs, freelancers, history) => {
+				const store = getStore();
+
+				setStore({
+					currentUser: {
+						email: "matheusferretti96@gmail.com",
+						token: "e1e2e3"
+					}
+				});
 			}
 		}
 	};

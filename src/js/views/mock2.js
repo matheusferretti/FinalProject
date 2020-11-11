@@ -48,6 +48,9 @@ export const Mock2 = () => {
 									<h5 className="card-title">Security Analyst - GitHub Security Lab</h5>
 									<p className="card-text">GitHub</p>
 									<p className="card-text">Miami, FL</p>
+									<button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
+										Apply
+									</button>
 								</div>
 								<small className="card-text text-muted m-3">Posted 5 days ago</small>
 							</div>
@@ -62,6 +65,9 @@ export const Mock2 = () => {
 									<h5 className="card-title">Data Scientist - Business Intelligence</h5>
 									<p className="card-text">GitHub</p>
 									<p className="card-text">Orlando, FL</p>
+									<button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
+										Apply
+									</button>
 								</div>
 								<small className="card-text text-muted m-3">Posted 1 month ago</small>
 							</div>
@@ -76,6 +82,9 @@ export const Mock2 = () => {
 									<h5 className="card-title">Software Engineer - Admin Experiences</h5>
 									<p className="card-text">GitHub</p>
 									<p className="card-text">Chatanooga, TN</p>
+									<button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
+										Apply
+									</button>
 								</div>
 								<small className="card-text text-muted m-3">Posted 2 weeks ago</small>
 							</div>

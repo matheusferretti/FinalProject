@@ -15,7 +15,7 @@ export const Mock = () => {
 					<li className="list-group-item">Full-Stack Developer</li>
 					<li className="list-group-item">5 Stars</li>
 					<li className="list-group-item">
-						Skills
+						<strong>Skills</strong>
 						<ul>
 							<li>Python</li>
 							<li>React.js</li>
