@@ -1,6 +1,5 @@
 import React from "react";
 import logoDraft from "../../img/LogoDraft.jpg";
-import AboutUs from "../../img/aboutUs.jpg";
 import "../../styles/home.scss";
 
 export const Home = () => (
@@ -21,7 +20,6 @@ export const Home = () => (
 		</div>
 		<div className="text-left d-inline">
 			<h1 className="mt-5 ml-5">ABOUT US</h1>
-			<img src={AboutUs} midth="200px" height="200px" />
 		</div>
 		<div className="text-right mt-5 mr-5">
 			<h1>WHY S/W?</h1>

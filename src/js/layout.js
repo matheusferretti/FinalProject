@@ -11,6 +11,7 @@ import { Signup } from "./views/signup";
 import { Signup2 } from "./views/signup2";
 import { Search } from "./views/search";
 import { Mock } from "./views/mock";
+import { Mock2 } from "./views/mock2";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -39,6 +40,7 @@ const Layout = () => {
 						<Route exact path="/single/:theid" component={Single} />
 						<Route exact path="/search" component={Search} />
 						<Route exact path="/mock" component={Mock} />
+						<Route exact path="/mock2" component={Mock2} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
