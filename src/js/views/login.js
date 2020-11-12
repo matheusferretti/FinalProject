@@ -27,7 +27,6 @@ export const Login = () => {
 							<input
 								onChange={e => setEmail(e.target.value)}
 								type="email"
-								// className="col-xs-4"
 								id="exampleInputEmail1"
 								aria-describedby="emailHelp"
 								placeholder="Enter email"
@@ -41,7 +40,6 @@ export const Login = () => {
 							<input
 								onChange={e => setPassword(e.target.value)}
 								type="password"
-								// className="col-xs-4"
 								id="exampleInputPassword1"
 								placeholder="Password"
 								value={password}
