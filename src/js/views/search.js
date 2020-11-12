@@ -3,7 +3,7 @@ import "../../styles/home.scss";
 import gitHub from "../../img/github.png";
 import { Context } from "../store/appContext";
 import { Card } from "../component/card";
-// import Card2 from "../component.recard";
+// import Card2 from "../component/recard";
 
 export const Search = () => {
 	const { store, actions } = useContext(Context);
@@ -37,11 +37,11 @@ export const Search = () => {
 									item.qualifications.toLowerCase().includes(search.toLowerCase()) ||
 									item.technologies.toLowerCase().includes(search.toLowerCase()))
 							) {
-								return <Card key={index} freelancers={item} index={index} />;
+								return <Card key={index} freelancer={item} index={index} />;
 							}
 							// else {
-							//     return <Card2 key={index} jobs={item} index={index} />;
-							//  }
+							// 	return <Card2 key={index} jobs={item} index={index} />;
+							// }
 						})}
 					</div>
 				</div>
