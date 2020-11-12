@@ -3,6 +3,7 @@ import "../../styles/home.scss";
 import gitHub from "../../img/github.png";
 import { Context } from "../store/appContext";
 import { Card } from "../component/card";
+import logoDraft from "../../img/LogoDraft.jpg";
 // import Card2 from "../component/recard";
 
 export const Search = () => {
@@ -11,21 +12,24 @@ export const Search = () => {
 
 	return (
 		<div>
-			<form className="form-inline my-2 my-lg-0 m-4">
-				<input
-					onChange={e => setSearch(e.target.value)}
-					type="text"
-					className="form-control mr-sm-2"
-					placeholder="Search"
-					aria-label="Search"
-				/>
-				<button
-					onClick={() => actions.login(jobs, freelancers, history)}
-					className="btn btn-outline-primary my-2 my-sm-0"
-					type="submit">
-					Search
-				</button>
-			</form>
+			<div className="float-left" style={{ width: "350px" }}>
+				<img src={logoDraft} style={{ width: "350px", height: "80px" }} />
+				<form className="form-inline my-2 my-lg-0 m-4">
+					<input
+						onChange={e => setSearch(e.target.value)}
+						type="text"
+						className="form-control mr-sm-2"
+						placeholder="Search"
+						aria-label="Search"
+					/>
+					<button
+						onClick={() => actions.login(jobs, freelancers, history)}
+						className="btn btn-outline-primary my-2 my-sm-0"
+						type="submit">
+						Search
+					</button>
+				</form>
+			</div>
 			<div className="container">
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
