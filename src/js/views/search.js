@@ -40,7 +40,7 @@ export const Search = () => {
 								return <Card key={index} freelancers={item} index={index} />;
 							}
 							// else (
-							//     return <Card2 key={index} freelancers={item} index={index} />;
+							//     return <Card2 key={index} jobs={item} index={index} />;
 							// )
 						})}
 					</div>
