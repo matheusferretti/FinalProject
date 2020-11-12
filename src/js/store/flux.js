@@ -32,6 +32,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 					technologies: "mysql"
 				}
 			],
+			recruiters: [
+				{
+					name: "GitHub",
+					companyType: "repository storing services"
+				},
+				{
+					name: "Apple",
+					companyType: "technology"
+				},
+				{
+					name: "Oracle",
+					companyType: "computer software"
+				},
+				{
+					name: "AWS",
+					companyType: "cloud srvices"
+				},
+				{
+					name: "Azure",
+					companyType: "cloud srvices"
+				}
+			],
 			jobs: [
 				{
 					title: "python developer",

@@ -2,16 +2,18 @@ import React from "react";
 import "../../styles/home.scss";
 
 export const Card = () => {
-    return(
-        <div className="card">
-            <div className="card-header">
-                Featured
-            </div>
-            <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-    )
-}
+	return (
+		<div className="card">
+			<div className="card-header">
+				<h5>Matheus Ferretti</h5>
+			</div>
+			<div className="card-body">
+				<p className="card-title">Python Developer</p>
+				<p className="card-text">Royal Caribbean</p>
+				<a href="#" className="btn btn-primary">
+					See Profile
+				</a>
+			</div>
+		</div>
+	);
+};

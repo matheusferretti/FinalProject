@@ -2,24 +2,24 @@ import React, { useState, useContext } from "react";
 import "../../styles/home.scss";
 import gitHub from "../../img/github.png";
 import { Context } from "../store/appContext";
+import { Card } from "./card";
 
 export const Search = () => {
-	// const { store, actions } = useContext(Context);
-	// const [search, setSearch] = useState("");
+	const { store, actions } = useContext(Context);
+	const [search, setSearch] = useState("");
 
 	return (
 		<div>
 			<form className="form-inline my-2 my-lg-0 m-4">
 				<input
-					// onChange={e => setSearch(e.target.value)}
-					// type="text"
+					onChange={e => setSearch(e.target.value)}
+					type="text"
 					className="form-control mr-sm-2"
-					type="search"
 					placeholder="Search"
 					aria-label="Search"
 				/>
 				<button
-					// onClick={() => actions.login(jobs, freelancers, history)}
+					onClick={() => actions.login(jobs, freelancers, history)}
 					className="btn btn-outline-primary my-2 my-sm-0"
 					type="submit">
 					Search
@@ -29,6 +29,16 @@ export const Search = () => {
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
 						<h1 className="display-5">Search results for GitHub jobs</h1>
+						{store.freelancers.map((item, index) => {
+							if (
+								search != "" &&
+								(item.name.toLowerCase().includes(search.toLowerCase()) ||
+									item.qualifications.toLowerCase().includes(search.toLowerCase()) ||
+									item.technologies.toLowerCase().includes(search.toLowerCase()))
+							) {
+								return <Card key={index} freelancers={item} index={index} />;
+							}
+						})}
 					</div>
 				</div>
 				<div className="jumbotron jumbotron-fluid">
