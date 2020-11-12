@@ -22,11 +22,14 @@ export const Home = () => (
 			</form>
 		</div>
 		<div className="d-flex">
-			<div className="text-left d-inline">
+			<div className="d-flex text-left d-inline">
 				<h3 className="mt-5 ml-5">
 					<img src={person1} />
 					ABOUT US
 				</h3>
+			</div>
+			<div className="d-flex align-items-center">
+				<h2 className="text-right">We are a company that...</h2>
 			</div>
 		</div>
 		<div className="text-right mt-5 mr-5">
