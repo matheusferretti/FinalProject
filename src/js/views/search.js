@@ -39,9 +39,9 @@ export const Search = () => {
 							) {
 								return <Card key={index} freelancers={item} index={index} />;
 							}
-							// else (
+							// else {
 							//     return <Card2 key={index} jobs={item} index={index} />;
-							// )
+							//  }
 						})}
 					</div>
 				</div>
