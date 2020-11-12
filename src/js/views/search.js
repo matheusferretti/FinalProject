@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 import "../../styles/home.scss";
 import gitHub from "../../img/github.png";
 import { Context } from "../store/appContext";
-import { Card } from "./card";
+import { Card } from "../component/card";
+// import Card2 from "../component.recard";
 
 export const Search = () => {
 	const { store, actions } = useContext(Context);
@@ -28,7 +29,7 @@ export const Search = () => {
 			<div className="container">
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
-						<h1 className="display-5">Search results for GitHub jobs</h1>
+						<h1 className="display-5 m-3">Search results for GitHub jobs</h1>
 						{store.freelancers.map((item, index) => {
 							if (
 								search != "" &&
@@ -38,6 +39,9 @@ export const Search = () => {
 							) {
 								return <Card key={index} freelancers={item} index={index} />;
 							}
+							// else (
+							//     return <Card2 key={index} freelancers={item} index={index} />;
+							// )
 						})}
 					</div>
 				</div>
