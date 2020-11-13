@@ -25,10 +25,10 @@ export const Home = () => (
 		</div>
 		<div className="d-flex mt-5">
 			<img src={person1} />
-			<h2 className="text-right d-flex align-items-center">ABOUT US</h2>
+			{/* <h2 className="text-right d-flex align-items-center">ABOUT US</h2> */}
 			<div className="jumbotron ml-auto">
 				<div className="container">
-					<h1 className="display-4">Hey fellow developer, this is what we do:</h1>
+					<h1 className="display-4">ABOUT US</h1>
 					<h3>
 						This platform was created to offer a simple and efficient way for software developers to embrace
 						freelance opportunities that extend across the world. Shall we take the next step?
@@ -37,20 +37,23 @@ export const Home = () => (
 			</div>
 		</div>
 		<div className="mt-5">
-			<div className="text-right mt-5 mr-5">
+			{/* <div className="text-right mt-5 mr-5">
 				<h3>
 					WHY S/W?
 					<img src={person2} />
 				</h3>
-			</div>
+			</div> */}
 			<div className="jumbotron mr-auto">
 				<div className="container">
-					<h1 className="display-4">Because yes!</h1>
+					<h1 className="display-4">WHY S/W?</h1>
 					<h3>
-						Just kidding... Freelancing can be difficult, and making connections can make it more
-						time-consuming. Our philosophy is based on minimizing time and increasing convenience, both for
-						freelancers and recruiters.
+						Because yes! Just kidding... Freelancing can be difficult, and making connections can make it
+						more time-consuming. Our philosophy is based on minimizing time and increasing convenience, both
+						for freelancers and recruiters.
 					</h3>
+					<div className="text-right mt-5 mr-5">
+						<img src={person2} />
+					</div>
 				</div>
 			</div>
 		</div>

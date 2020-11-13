@@ -30,9 +30,6 @@ const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/home" component={Home} />
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
 						<Route exact path="/signup" component={Signup} />
 						<Route exact path="/signup2" component={Signup2} />
 						<Route exact path="/profile" component={Profile} />
