@@ -52,8 +52,6 @@ export const Signup = props => {
 				<label htmlFor="exampleInputPassword1">Password</label>
 				<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
 			</div>
-			<input type="checkbox" id="freelancer" name="freelancer" value="freelancer" placeholder="freelancer" />
-			<input type="checkbox" id="recruiter" name="recruiter" value="recruiter" placeholder="recruiter" />
 			<button type="submit" className="btn btn-primary">
 				Submit
 			</button>
