@@ -5,6 +5,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				name: "Matheus",
 				type: "user"
 			},
+			user: {
+				username: "",
+				password: "",
+				userType: ""
+			},
 			freelancers: [
 				{
 					name: "Matheus",
@@ -82,9 +87,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			],
 			currentUser: {
-				email: "matheusferretti96@gmail.com",
-				token: null
-			}
+				email: "",
+				token: null,
+				userType: ""
+			},
+			users: [
+				{
+					email: "matheus.ferretti@gmail.com",
+					token: null,
+					userType: "recruiter"
+				},
+				{
+					email: "matheus.monteiro@gmail.com",
+					token: null,
+					userType: "freelancer"
+				}
+			]
 		},
 		actions: {
 			exampleFunction: () => {
@@ -115,14 +133,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//this is where I fetch, and only will set the store if after fetching I get a 200
 				//reset the global store
-				setStore({
-					currentUser: {
-						email: "matheusferretti96@gmail.com",
-						token: "e1e2e3"
+				for (let x of store.users) {
+					if (x.email == email) {
+						setStore({
+							currentUser: {
+								email: email,
+								token: "e1e2e3",
+								userType: x.userType
+							}
+						});
 					}
-				});
-				history.push("/home");
+				}
+				history.push("/profile");
 			},
+			// setUser: user => {
+			// 	setStore({ user: user });
+			// },
 			search: (jobs, freelancers, history) => {
 				const store = getStore();
 

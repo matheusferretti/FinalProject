@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import "../../styles/home.scss";
 import PropTypes from "prop-types";
 

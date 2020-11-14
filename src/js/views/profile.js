@@ -7,5 +7,5 @@ import "../../styles/home.scss";
 export const Profile = () => {
 	const { store, actions } = useContext(Context);
 
-	return <div>{store.profile.type == "user" ? <Mock /> : <Mock2 />}</div>;
+	return <div>{store.currentUser.userType == "freelancer" ? <Mock /> : <Mock2 />}</div>;
 };

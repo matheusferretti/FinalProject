@@ -11,28 +11,32 @@ export const Navbar = () => {
 				<Link to="/login">
 					<button className="btn btn-primary">LOG-IN</button>
 				</Link>
-				<Link to="/signup">
-					<button className="btn btn-secondary ml-auto">
-						<div className="dropdown">
-							<button
-								className="btn btn-secondary dropdown-toggle"
-								type="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false">
-								Sign-Up
-							</button>
-							<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				{/* <Link to="/signup"> */}
+				<button className="btn btn-secondary ml-auto">
+					<div className="dropdown">
+						<button
+							className="btn btn-secondary dropdown-toggle"
+							type="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false">
+							Sign-Up
+						</button>
+						<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<Link to="/signup">
 								<a className="dropdown-item" href="#">
 									Freelancer
 								</a>
+							</Link>
+							<Link to="/signup">
 								<a className="dropdown-item" href="#">
 									Company
 								</a>
-							</div>
+							</Link>
 						</div>
-					</button>
-				</Link>
+					</div>
+				</button>
+				{/* </Link> */}
 			</div>
 		</nav>
 	);
