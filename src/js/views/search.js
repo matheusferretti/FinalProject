@@ -3,8 +3,8 @@ import "../../styles/home.scss";
 import gitHub from "../../img/github.png";
 import { Context } from "../store/appContext";
 import { Card } from "../component/card";
+import { Card2 } from "../component/card2";
 import logoDraft from "../../img/LogoDraft.jpg";
-// import Card2 from "../component/recard";
 
 export const Search = () => {
 	const { store, actions } = useContext(Context);
@@ -34,19 +34,26 @@ export const Search = () => {
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
 						<h1 className="display-5 m-3">Search results for GitHub jobs</h1>
-						{store.freelancers.map((item, index) => {
-							if (
-								search != "" &&
-								(item.name.toLowerCase().includes(search.toLowerCase()) ||
-									item.qualifications.toLowerCase().includes(search.toLowerCase()) ||
-									item.technologies.toLowerCase().includes(search.toLowerCase()))
-							) {
-								return <Card key={index} freelancer={item} index={index} />;
-							}
-							// else {
-							// 	return <Card2 key={index} jobs={item} index={index} />;
-							// }
-						})}
+						{store.currentUser.userType == "recruiter"
+							? store.freelancers.map((item, index) => {
+									if (
+										search != "" &&
+										(item.name.toLowerCase().includes(search.toLowerCase()) ||
+											item.qualifications.toLowerCase().includes(search.toLowerCase()) ||
+											item.technologies.toLowerCase().includes(search.toLowerCase()))
+									) {
+										return <Card key={index} freelancer={item} index={index} />;
+									}
+							  })
+							: store.recruiters.map((item, index) => {
+									if (
+										search != "" &&
+										(item.name.toLowerCase().includes(search.toLowerCase()) ||
+											item.companyType.toLowerCase().includes(search.toLowerCase()))
+									) {
+										return <Card2 key={index} recruiter={item} index={index} />;
+									}
+							  })}
 					</div>
 				</div>
 				<div className="jumbotron jumbotron-fluid">
