@@ -1,4 +1,5 @@
 import React from "react";
+import { Search } from "../component/search";
 import logoDraft from "../../img/LogoDraft.jpg";
 import person1 from "../../img/person1.png";
 import person2 from "../../img/person2.png";
@@ -9,19 +10,7 @@ export const Home = () => (
 	<div>
 		<div className="text-center mt-5">
 			<img src={logoDraft} />
-			<div className="d-flex justify-content-center">
-				<form className="form-inline my-2 my-lg-4">
-					<input
-						className="form-control mr-sm-2"
-						type="search"
-						placeholder="Search for jobs, companies, or prospects"
-						aria-label="Search"
-					/>
-					<button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
-						Search
-					</button>
-				</form>
-			</div>
+			<Search />
 		</div>
 		<div className="d-flex mt-5">
 			<img src={person1} />
@@ -47,9 +36,9 @@ export const Home = () => (
 				<div className="container">
 					<h1 className="display-4">WHY S/W?</h1>
 					<h3>
-						Because yes! Just kidding... Freelancing can be difficult, and making connections can make it
-						more time-consuming. Our philosophy is based on minimizing time and increasing convenience, both
-						for freelancers and recruiters.
+						Because yes! Just kidding... Freelancing can be difficult, and making connections can become
+						time-consuming. Our philosophy is based on minimizing time and increasing convenience, both for
+						freelancers and recruiters.
 					</h3>
 					<div className="text-right mt-5 mr-5">
 						<img src={person2} />

@@ -95,12 +95,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 					email: "matheus.ferretti@gmail.com",
 					token: null,
-					userType: "recruiter"
+					userType: "recruiter",
+					companyName: "Target",
+					companyUrl: "www.target.com",
+					password: "1234"
 				},
 				{
 					email: "matheus.monteiro@gmail.com",
 					token: null,
-					userType: "freelancer"
+					userType: "freelancer",
+					name: "Matheus",
+					lastName: "Monteiro",
+					password: "1234"
 				}
 			]
 		},
@@ -145,6 +151,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 				}
 				history.push("/profile");
+			},
+			logout: () => {
+				setStore({
+					currentUser: {
+						email: "",
+						token: null,
+						userType: ""
+					}
+				});
 			},
 			// setUser: user => {
 			// 	setStore({ user: user });

@@ -6,7 +6,7 @@ import { Card } from "../component/card";
 import { Card2 } from "../component/card2";
 import logoDraft from "../../img/LogoDraft.jpg";
 
-export const Search = () => {
+export const Searchresults = () => {
 	const { store, actions } = useContext(Context);
 	const [search, setSearch] = useState("");
 
@@ -33,7 +33,7 @@ export const Search = () => {
 			<div className="container">
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
-						<h1 className="display-5 m-3">Search results for GitHub jobs</h1>
+						<h1 className="display-5 m-3">Search results</h1>
 						{store.currentUser.userType == "recruiter"
 							? store.freelancers.map((item, index) => {
 									if (
@@ -56,7 +56,7 @@ export const Search = () => {
 							  })}
 					</div>
 				</div>
-				<div className="jumbotron jumbotron-fluid">
+				{/* <div className="jumbotron jumbotron-fluid">
 					<div className="container">
 						<h1 className="display-4">Jobs Posted</h1>
 						<div className="d-flex">
@@ -113,7 +113,7 @@ export const Search = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+	const { store, actions } = useContext(Context);
+
 	return (
 		<nav className="navbar navbar-dark bg-dark mb-3">
 			<Link to="/">
 				<span className="navbar-brand mb-0 h1">WELCOME TO S/W</span>
 			</Link>
 			<div className="ml-auto">
-				<Link to="/login">
-					<button className="btn btn-primary">LOG-IN</button>
-				</Link>
+				{store.currentUser.token == null ? (
+					<Link to="/login">
+						<button className="btn btn-primary">LOG-IN</button>
+					</Link>
+				) : (
+					<Link to="/login">
+						<button onClick={() => actions.logout()} className="btn btn-primary">
+							LOG-OUT
+						</button>
+					</Link>
+				)}
 				{/* <Link to="/signup"> */}
 				<button className="btn btn-secondary ml-auto">
 					<div className="dropdown">
