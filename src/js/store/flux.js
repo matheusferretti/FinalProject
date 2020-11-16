@@ -166,13 +166,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 			// },
 			search: (jobs, freelancers, history) => {
 				const store = getStore();
-
-				setStore({
-					currentUser: {
-						email: "matheusferretti96@gmail.com",
-						token: "e1e2e3"
-					}
-				});
 			}
 		}
 	};
