@@ -13,19 +13,23 @@ export const Navbar = () => {
 					<span className="navbar-brand mb-0 h1">SYMP-WEB</span>
 				</h3>
 			</Link>
-			<div className="ml-auto">
-				{store.currentUser.token == null ? (
-					<Link to="/login">
-						<button className="btn btn-primary">LOG-IN</button>
-					</Link>
-				) : (
-					<Link to="/login">
-						<button onClick={() => actions.logout()} className="btn btn-primary">
-							LOG-OUT
-						</button>
-					</Link>
-				)}
-				<DropdownButton />
+			<div className="ml-auto d-flex">
+				<div className="m-2">
+					{store.currentUser.token == null ? (
+						<Link to="/login">
+							<button className="btn btn-primary">LOG-IN</button>
+						</Link>
+					) : (
+						<Link to="/login">
+							<button onClick={() => actions.logout()} className="btn btn-primary">
+								LOG-OUT
+							</button>
+						</Link>
+					)}
+				</div>
+				<div className="m-2">
+					<DropdownButton />
+				</div>
 			</div>
 		</nav>
 	);
