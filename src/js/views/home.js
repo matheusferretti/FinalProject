@@ -30,7 +30,7 @@ export const Home = () => (
 				<img src={person1} />
 			</div> */}
 			{/* <h2 className="text-right d-flex align-items-center">ABOUT US</h2> */}
-			<div className="first jumbotron ml-auto d-flex">
+			<div className="first jumbo jumbotron ml-auto d-flex">
 				<div className="d-flex justify-content-center">
 					<img src={person1} />
 				</div>
@@ -50,7 +50,7 @@ export const Home = () => (
 					<img src={person2} />
 				</h3>
 			</div> */}
-			<div className="jumbotron mr-auto">
+			<div className="jumbo jumbotron mr-auto">
 				<div className="container">
 					<h1 className="display-4">WHY S/W?</h1>
 					<h3>
