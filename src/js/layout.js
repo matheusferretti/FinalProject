@@ -9,7 +9,8 @@ import { Login } from "./views/login";
 import { Profile } from "./views/profile";
 import { Signup } from "./views/signup";
 import { Signup2 } from "./views/signup2";
-import { Searchresults } from "./views/searchResults";
+import { SearchRecruiters } from "./views/searchRecruiters";
+import { SearchFreelancers } from "./views/searchFreelancers";
 import { Mock } from "./views/mock";
 import { Mock2 } from "./views/mock2";
 import injectContext from "./store/appContext";
@@ -29,13 +30,14 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
-						<Route exact path="/home" component={Home} />
+						<Route exact path="/" component={Home} />
 						<Route exact path="/signup" component={Signup} />
 						<Route exact path="/signup2" component={Signup2} />
 						<Route exact path="/profile" component={Profile} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/single/:theid" component={Single} />
-						<Route exact path="/search" component={Searchresults} />
+						<Route exact path="/searchRecruiters" component={SearchRecruiters} />
+						<Route exact path="/searchFreelancers" component={SearchFreelancers} />
 						<Route exact path="/mock" component={Mock} />
 						<Route exact path="/mock2" component={Mock2} />
 						<Route>

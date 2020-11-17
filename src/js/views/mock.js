@@ -1,6 +1,5 @@
 import React from "react";
 import mat2 from "../../img/mat2.png";
-import "../../styles/home.scss";
 
 export const Mock = () => {
 	return (

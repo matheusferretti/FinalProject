@@ -6,12 +6,24 @@ import person2 from "../../img/person2.png";
 import person3 from "../../img/person3.png";
 import "../../styles/home.scss";
 import "animate.css";
+import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<div>
 		<div className="text-center mt-5">
 			<img className="animate__animated animate__bounceIn" src={logoDraft} />
-			<Search />
+			<div className="d-flex justify-content-center">
+				<Link to="/searchRecruiters">
+					<button type="button" className="btn btn-outline-primary m-2">
+						Search for Recruiters
+					</button>
+				</Link>
+				<Link to="/searchFreelancers">
+					<button type="button" className="btn btn-outline-primary m-2">
+						Search for Freelancers
+					</button>
+				</Link>
+			</div>
 		</div>
 		<div className="d-flex mt-5 animate__animated animate__bounceInLeft">
 			{/* <div className="d-flex justify-content-center">

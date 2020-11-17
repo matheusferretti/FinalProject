@@ -6,7 +6,7 @@ import { Card } from "../component/card";
 import { Card2 } from "../component/card2";
 import logoDraft from "../../img/LogoDraft.jpg";
 
-export const Searchresults = () => {
+export const SearchRecruiters = () => {
 	const { store, actions } = useContext(Context);
 	const [search, setSearch] = useState("");
 
@@ -34,26 +34,25 @@ export const Searchresults = () => {
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
 						<h1 className="display-5 m-3">Search results</h1>
-						{store.currentUser.userType == "recruiter"
-							? store.freelancers.map((item, index) => {
-									if (
-										search != "" &&
-										(item.name.toLowerCase().includes(search.toLowerCase()) ||
-											item.qualifications.toLowerCase().includes(search.toLowerCase()) ||
-											item.technologies.toLowerCase().includes(search.toLowerCase()))
-									) {
-										return <Card key={index} freelancer={item} index={index} />;
-									}
-							  })
-							: store.recruiters.map((item, index) => {
-									if (
-										search != "" &&
-										(item.name.toLowerCase().includes(search.toLowerCase()) ||
-											item.companyType.toLowerCase().includes(search.toLowerCase()))
-									) {
-										return <Card2 key={index} recruiter={item} index={index} />;
-									}
-							  })}
+						{// ? store.freelancers.map((item, index) =>
+						// 		if (
+						// 			search != "" &&
+						// 			(item.name.toLowerCase().includes(search.toLowerCase()) ||
+						// 				item.qualifications.toLowerCase().includes(search.toLowerCase()) ||
+						// 				item.technologies.toLowerCase().includes(search.toLowerCase()))
+						// 		) {
+						// 			return <Card key={index} freelancer={item} index={index} />;
+						// 		}
+						//   })
+						store.recruiters.map((item, index) => {
+							if (
+								search != "" &&
+								(item.name.toLowerCase().includes(search.toLowerCase()) ||
+									item.companyType.toLowerCase().includes(search.toLowerCase()))
+							) {
+								return <Card2 key={index} recruiter={item} index={index} />;
+							}
+						})}
 					</div>
 				</div>
 				{/* <div className="jumbotron jumbotron-fluid">
