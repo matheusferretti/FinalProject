@@ -3,6 +3,7 @@ import "../../styles/home.scss";
 import { Context } from "../store/appContext";
 import { useHistory } from "react-router-dom";
 import logo from "../../img/LogoDraft2.png";
+import "animate.css";
 // import logoDraft from "../../img/LogoDraft.jpg";
 
 export const Login = () => {
@@ -18,7 +19,11 @@ export const Login = () => {
 
 	return (
 		<div className="container">
-			<img src={logo} style={{ width: "200px;", height: "200px" }} />
+			<img
+				className="animate__animated animate__zoomInRight"
+				src={logo}
+				style={{ width: "200px;", height: "200px" }}
+			/>
 			<div className="d-flex justify-content-center">
 				<form className="mx-auto" style={{ width: "500px;" }}>
 					<div className="form-group">
