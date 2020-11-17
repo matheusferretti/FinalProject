@@ -30,7 +30,8 @@ export const Navbar = () => {
 							type="button"
 							data-toggle="dropdown"
 							aria-haspopup="true"
-							aria-expanded="false">
+							aria-expanded="false"
+							style={{ padding: "0" }}>
 							Sign-Up
 						</button>
 						<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">

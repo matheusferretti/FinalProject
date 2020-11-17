@@ -5,17 +5,23 @@ import person1 from "../../img/person1.png";
 import person2 from "../../img/person2.png";
 import person3 from "../../img/person3.png";
 import "../../styles/home.scss";
+import "animate.css";
 
 export const Home = () => (
 	<div>
 		<div className="text-center mt-5">
-			<img src={logoDraft} />
+			<img className="animate__animated animate__bounceIn" src={logoDraft} />
 			<Search />
 		</div>
-		<div className="d-flex mt-5">
-			<img src={person1} />
+		<div className="d-flex mt-5 animate__animated animate__bounceInLeft">
+			{/* <div className="d-flex justify-content-center">
+				<img src={person1} />
+			</div> */}
 			{/* <h2 className="text-right d-flex align-items-center">ABOUT US</h2> */}
-			<div className="jumbotron ml-auto">
+			<div className="first jumbotron ml-auto d-flex">
+				<div className="d-flex justify-content-center">
+					<img src={person1} />
+				</div>
 				<div className="container">
 					<h1 className="display-4">ABOUT US</h1>
 					<h3>
