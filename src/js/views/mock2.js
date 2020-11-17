@@ -1,6 +1,5 @@
 import React from "react";
 import gitHub from "../../img/github.png";
-import "../../styles/home.scss";
 
 export const Mock2 = () => {
 	return (
