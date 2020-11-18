@@ -4,7 +4,7 @@ import mat2 from "../../img/mat2.png";
 export const Mock = () => {
 	return (
 		<div>
-			<div className="card float-left m-5" style={{ width: "18rem" }}>
+			<div className="card float-left m-2" style={{ width: "18rem" }}>
 				<img src={mat2} className="img-thumbnail" style={{ width: "285px", height: "285px" }} alt="" />
 				<div className="card-body">
 					<h5 className="card-title">Matheus Ferretti</h5>

@@ -43,7 +43,7 @@ export const Home = () => (
 				</div>
 			</div>
 		</div>
-		<div className="mt-5">
+		<div className="mt-3">
 			{/* <div className="text-right mt-5 mr-5">
 				<h3>
 					WHY S/W?

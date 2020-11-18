@@ -4,7 +4,7 @@ import gitHub from "../../img/github.png";
 export const Mock2 = () => {
 	return (
 		<div>
-			<div className="card float-left m-5" style={{ width: "18rem" }}>
+			<div className="card float-left m-2" style={{ width: "18rem" }}>
 				<img src={gitHub} className="rounded" style={{ width: "285px", height: "285px" }} alt="" />
 				<div className="card-body">
 					<h5 className="card-title">GitHub</h5>

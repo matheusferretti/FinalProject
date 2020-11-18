@@ -8,7 +8,7 @@ import { Single } from "./views/single";
 import { Login } from "./views/login";
 import { Profile } from "./views/profile";
 import { Signup } from "./views/signup";
-import { Signup2 } from "./views/signup2";
+import { Signup2 } from "./component/signup2";
 import { SearchRecruiters } from "./views/searchRecruiters";
 import { SearchFreelancers } from "./views/searchFreelancers";
 import { Mock } from "./views/mock";
