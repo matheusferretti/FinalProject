@@ -4,14 +4,8 @@ import { Context } from "../store/appContext";
 import { useHistory } from "react-router-dom";
 import logo from "../../img/LogoDraft2.png";
 import "animate.css";
-// import logoDraft from "../../img/LogoDraft.jpg";
 
 export const Login = () => {
-	// const [contact, setContact] = useState({
-	// 	email: "",
-	//  password: ""
-	// });
-
 	const { store, actions } = useContext(Context);
 	const history = useHistory();
 	const [email, setEmail] = useState();
