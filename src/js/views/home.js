@@ -26,10 +26,6 @@ export const Home = () => (
 			</div>
 		</div>
 		<div className="d-flex mt-5 animate__animated animate__bounceInLeft">
-			{/* <div className="d-flex justify-content-center">
-				<img src={person1} />
-			</div> */}
-			{/* <h2 className="text-right d-flex align-items-center">ABOUT US</h2> */}
 			<div className="first jumbo jumbotron ml-auto d-flex">
 				<div className="d-flex justify-content-center">
 					<img src={person1} />
