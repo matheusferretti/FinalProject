@@ -11,6 +11,7 @@ import { Signup } from "./component/signup";
 import { Signup2 } from "./component/signup2";
 import { SearchRecruiters } from "./views/searchRecruiters";
 import { SearchFreelancers } from "./views/searchFreelancers";
+import { SearchRecs } from "./views/searchRecs";
 import { Mock } from "./views/mock";
 import { Mock2 } from "./views/mock2";
 import injectContext from "./store/appContext";
@@ -38,6 +39,7 @@ const Layout = () => {
 						<Route exact path="/single/:theid" component={Single} />
 						<Route exact path="/searchRecruiters" component={SearchRecruiters} />
 						<Route exact path="/searchFreelancers" component={SearchFreelancers} />
+						<Route exact path="/searchRecs" component={SearchRecs} />
 						<Route exact path="/mock" component={Mock} />
 						<Route exact path="/mock2" component={Mock2} />
 						<Route>

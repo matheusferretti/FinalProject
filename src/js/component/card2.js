@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/home.scss";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export const Card2 = props => {
 	return (
@@ -10,9 +11,11 @@ export const Card2 = props => {
 			</div>
 			<div className="card-body">
 				<p className="card-title">{props.recruiter.companyType}</p>
-				<button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
-					See Profile
-				</button>
+				<Link to="/searchRecs">
+					<button className="btn btn-outline-primary my-2 my-sm-0" type="submit">
+						See Profile
+					</button>
+				</Link>
 			</div>
 		</div>
 	);
