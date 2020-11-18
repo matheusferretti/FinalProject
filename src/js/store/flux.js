@@ -59,6 +59,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 					companyType: "cloud srvices"
 				}
 			],
+			recruitersPage: [
+				{
+					name: "GitHub",
+					companyType: "Repository Storing Services",
+					review: "5 Stars",
+					siteUrl: "https://github.com/",
+					companyLkdn: "https://www.linkedin.com/company/github/",
+					image:
+						"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn3.iconfinder.com%2Fdata%2Ficons%2Fsocial-media-2169%2F24%2Fsocial_media_social_media_logo_github-512.png&f=1&nofb=1",
+					pageIntro: "Welcome to GitHub",
+					companyIntro:
+						"GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over 31 million people use GitHub to build amazing things together across 97+ million repositories. With all the collaborative features of GitHub, it has never been easier for individuals and teams to write faster, better code.",
+					jobsPosted: []
+				},
+				{}
+			],
 			jobs: [
 				{
 					title: "python developer",

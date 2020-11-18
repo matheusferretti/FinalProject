@@ -19,7 +19,7 @@ export const SearchRecruiters = () => {
 						onChange={e => setSearch(e.target.value)}
 						type="text"
 						className="form-control mr-sm-2"
-						placeholder="Search"
+						placeholder="Search Recruiters"
 						aria-label="Search"
 					/>
 					<button
@@ -33,7 +33,7 @@ export const SearchRecruiters = () => {
 			<div className="container">
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
-						<h1 className="display-5 m-3">Search results</h1>
+						<h1 className="display-5 m-3">Search results for Recruiters</h1>
 						{// ? store.freelancers.map((item, index) =>
 						// 		if (
 						// 			search != "" &&
