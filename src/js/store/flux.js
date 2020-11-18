@@ -71,7 +71,23 @@ const getState = ({ getStore, getActions, setStore }) => {
 					pageIntro: "Welcome to GitHub",
 					companyIntro:
 						"GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over 31 million people use GitHub to build amazing things together across 97+ million repositories. With all the collaborative features of GitHub, it has never been easier for individuals and teams to write faster, better code.",
-					jobsPosted: []
+					jobsPosted: [
+						{
+							jobName: "Data Scientist - Business Intelligence",
+							companyName: "GitHub",
+							cityName: "Orlando, FL"
+						},
+						{
+							jobName: "Security Analyst - GitHub Security Lab",
+							companyName: "GitHub",
+							cityName: "Miami, FL"
+						},
+						{
+							jobName: "Software Engineer - Admin Experiences",
+							companyName: "GitHub",
+							cityName: "Chatanooga, TN"
+						}
+					]
 				},
 				{}
 			],
