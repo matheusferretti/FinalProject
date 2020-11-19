@@ -1,27 +1,36 @@
 import React, { useState, useContext } from "react";
 import "../../styles/home.scss";
 // import PropTypes from "prop-types";
+import logoDraft from "../../img/LogoDraft.jpg";
 
 export const Signup = props => {
 	return (
 		<div className="d-flex justify-content-center mt-5">
 			<form className="border" style={{ width: "25rem", padding: "80px" }}>
-				<div className="form-group">
-					<label htmlFor="examplefirstName">First Name</label>
-					<input type="text" className="form-control" id="examplefirstName" placeholder="Enter first name" />
+				<div className="d-flex justify-content-center">
+					<img src={logoDraft} style={{ width: "20rem", height: "80px" }} />
 				</div>
 				<div className="form-group">
-					<label htmlFor="examplelastName">Last Name</label>
-					<input type="text" className="form-control" id="examplelastName" placeholder="Enter last name" />
+					<label htmlFor="examplefirstName">Company Name</label>
+					<input
+						type="text"
+						className="form-control"
+						id="examplefirstName"
+						placeholder="Enter company name"
+					/>
 				</div>
 				<div className="form-group">
-					<label htmlFor="exampleInputEmail1">Email address</label>
+					<label htmlFor="examplelastName">Email address</label>
+					<input type="text" className="form-control" id="examplelastName" placeholder="Enter email" />
+				</div>
+				<div className="form-group">
+					<label htmlFor="exampleInputEmail1">Company URL</label>
 					<input
 						type="email"
 						className="form-control"
 						id="exampleInputEmail1"
 						aria-describedby="emailHelp"
-						placeholder="Enter email"
+						placeholder="URL"
 					/>
 				</div>
 				<div className="form-group">
