@@ -10,7 +10,7 @@ export const DropdownButton = () => {
 
 			<Dropdown.Menu>
 				<Dropdown.Item href="/signup2">Freelancer</Dropdown.Item>
-				<Dropdown.Item href="/signup">Recruiter</Dropdown.Item>
+				<Dropdown.Item href="/signup">Employer</Dropdown.Item>
 			</Dropdown.Menu>
 		</Dropdown>
 	);

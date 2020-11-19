@@ -93,29 +93,34 @@ const getState = ({ getStore, getActions, setStore }) => {
 			],
 			jobs: [
 				{
-					title: "python developer",
-					skills: "python",
-					companyType: "tech"
+					companyName: "Windows",
+					companyType: "tech",
+					title: "Python Developer",
+					location: "Miami, FL"
 				},
 				{
+					companyName: "Apple",
+					companyType: "tech",
 					title: "back-end developer",
-					skills: "mysql",
-					companyType: "tech"
+					location: "Chatanooga, TN"
 				},
 				{
+					companyName: "Kaseya",
+					companyType: "Software",
 					title: "front-end developer",
-					skills: "html",
-					companyType: "retail"
+					location: "Miami, FL"
 				},
 				{
+					companyName: "GitHub",
+					companyType: "hr",
 					title: "react developer",
-					skills: "react",
-					companyType: "hr"
+					location: "Chicago, IL"
 				},
 				{
+					companyName: "4Geeks Academy",
+					companyType: "tech",
 					title: "full-stack dev",
-					skills: "react",
-					companyType: "tech"
+					location: "Punta Arenas, Chile"
 				}
 			],
 			currentUser: {

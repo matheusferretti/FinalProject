@@ -15,12 +15,19 @@ export const Home = () => (
 			<div className="d-flex justify-content-center">
 				<Link to="/searchRecruiters">
 					<button type="button" className="btn btn-outline-primary m-2">
-						Search for Recruiters
+						Search for Employers
 					</button>
 				</Link>
 				<Link to="/searchFreelancers">
 					<button type="button" className="btn btn-outline-primary m-2">
 						Search for Freelancers
+					</button>
+				</Link>
+			</div>
+			<div className="d-flex justify-content-center">
+				<Link to="/searchJobs">
+					<button type="button" className="btn btn-outline-primary m-2">
+						Search for Jobs
 					</button>
 				</Link>
 			</div>
