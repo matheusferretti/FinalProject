@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "../../styles/home.scss";
 import gitHub from "../../img/github.png";
 import { Context } from "../store/appContext";
-import { Card3 } from "../component/card2";
+import { Card3 } from "../component/card3";
 import logoDraft from "../../img/LogoDraft.jpg";
 
 export const SearchJobs = () => {
