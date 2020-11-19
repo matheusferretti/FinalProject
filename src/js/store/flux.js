@@ -40,23 +40,23 @@ const getState = ({ getStore, getActions, setStore }) => {
 			recruiters: [
 				{
 					name: "GitHub",
-					companyType: "repository storing services"
+					companyType: "Repository Storing Services"
 				},
 				{
 					name: "Apple",
-					companyType: "technology"
+					companyType: "Technology"
 				},
 				{
 					name: "Oracle",
-					companyType: "computer software"
+					companyType: "Computer Software"
 				},
 				{
 					name: "AWS",
-					companyType: "cloud srvices"
+					companyType: "Cloud Services"
 				},
 				{
 					name: "Azure",
-					companyType: "cloud srvices"
+					companyType: "Cloud Services"
 				}
 			],
 			recruitersPage: [
@@ -94,32 +94,32 @@ const getState = ({ getStore, getActions, setStore }) => {
 			jobs: [
 				{
 					companyName: "Windows",
-					companyType: "tech",
+					companyType: "Tech",
 					title: "Python Developer",
 					location: "Miami, FL"
 				},
 				{
 					companyName: "Apple",
-					companyType: "tech",
-					title: "back-end developer",
+					companyType: "Tech",
+					title: "Back-End Developer",
 					location: "Chatanooga, TN"
 				},
 				{
 					companyName: "Kaseya",
 					companyType: "Software",
-					title: "front-end developer",
+					title: "Account Executive",
 					location: "Miami, FL"
 				},
 				{
 					companyName: "GitHub",
-					companyType: "hr",
-					title: "react developer",
+					companyType: "Repository Storage Services",
+					title: "React Developer",
 					location: "Chicago, IL"
 				},
 				{
 					companyName: "4Geeks Academy",
-					companyType: "tech",
-					title: "full-stack dev",
+					companyType: "Tech",
+					title: "Web Dev Instructor",
 					location: "Punta Arenas, Chile"
 				}
 			],
