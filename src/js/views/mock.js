@@ -74,7 +74,7 @@ export const Mock = () => {
 						<h1 className="display-4">Experience</h1>
 						<ul>
 							<li>
-								<strong>Account Manager</strong>, Kaseya
+								<strong>Account Manager</strong>, Kipu
 							</li>
 							<ul>
 								<li>Sold software to other companies</li>
