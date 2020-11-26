@@ -1,7 +1,7 @@
 # SYMP-WEB, the modern symposium
 
 <p align="center">
-<img src="\Users\mathe\Downloads\Hello-Rigo-with-Vanillajs.gif" />
+![hippo](C:\Users\mathe\Downloads\Hello-Rigo-with-Vanillajs.gif)
 </p>
 
 
