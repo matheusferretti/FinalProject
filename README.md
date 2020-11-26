@@ -1,7 +1,7 @@
 # SYMP-WEB, the modern symposium
 
 <p align="center">
-<img src="![Hello-Rigo-with-Vanillajs](https://user-images.githubusercontent.com/63252585/100388557-ea0c4680-2ff8-11eb-912e-6d3d79399d99.gif)" />
+<img src="https://user-images.githubusercontent.com/63252585/100388557-ea0c4680-2ff8-11eb-912e-6d3d79399d99.gif" />
 </p>
 
 
