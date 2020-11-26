@@ -2,7 +2,7 @@
 
 Hey fellow developers, welcome to SYMP-WEB!
 
-With the sudden increase in remote job opportunities, this web application was developed aiming a better future for software developers and the labor force as a whole. This platform allows you to be specific when it comes to both recruitment and job applications. 
+With the sudden increase in remote job opportunities, this web application was developed aiming a better future for software developers and the labor force as a whole. This platform allows you to be specific when it comes to both recruitment and job applications. This project came out to be user-friendly and efficiently simple thanks to React, SCSS, Bootstrap, and Flux. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63252585/100388557-ea0c4680-2ff8-11eb-912e-6d3d79399d99.gif" />
