@@ -1,7 +1,7 @@
 # SYMP-WEB, the modern symposium
 
 <p align="center">
-![til](C:\Users\mathe\Downloads\Hello-Rigo-with-Vanillajs.gif)
+<img src="https://github.com/matheusferretti/SYMPWEB-FRONTEND/issues/1#issue-751806183" />
 </p>
 
 
