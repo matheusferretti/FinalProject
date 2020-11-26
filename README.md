@@ -1,6 +1,6 @@
 # SYMP-WEB, the modern symposium
 
-With the sudden increase in remote job opportunities, this web application was developed aiming a better future for software developers and the labor force as a whole. This platform allows you to be specific when it comes to both recruitment and job applications. As you can see in the image displayed below, you have the option to sign up either as a freelancer or as an employer:
+With the sudden increase in remote job opportunities, this web application was developed aiming a better future for software developers and the labor force as a whole. This platform allows you to be specific when it comes to both recruitment and job applications. With S/W, you have the option to sign up as a freelancer or as an employer:
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63252585/100388557-ea0c4680-2ff8-11eb-912e-6d3d79399d99.gif" />
