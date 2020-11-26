@@ -14,6 +14,9 @@ With S/W, you have the option to sign up as a freelancer or as an employer:
 <img src="https://user-images.githubusercontent.com/63252585/100390302-dd3e2180-2ffd-11eb-8885-753b791c67ed.gif" />
 </p>
 
+Indeed, the FUTURE-IS-FREELANCE, so login asap ;)
+
+
 
 
 ### Requirements:
