@@ -11,7 +11,7 @@ With the sudden increase in remote job opportunities, this web application was d
 With S/W, you have the option to sign up as a freelancer or as an employer:
 
 <p align="center">
-![Hello-Rigo-with-Vanillajs-2](https://user-images.githubusercontent.com/63252585/100390187-83d5f280-2ffd-11eb-88e6-41e65cb0a092.gif)
+![Hello-Rigo-with-Vanillajs-2](https://github.com/matheusferretti/SYMPWEB-FRONTEND/issues/3#issue-751818526)
 </p>
 
 
