@@ -16,6 +16,11 @@ With S/W, you have the option to sign up as a freelancer or as an employer:
 
 Indeed, the FUTURE-IS-FREELANCE, so login asap ;)
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63252585/100390404-3d34c800-2ffe-11eb-94b6-c29d7960c80a.gif" />
+</p>
+
+Last but not least, we have to be able to search for jobs, freelancers, and/or employers, so why not create searching options for each?
 
 
 
