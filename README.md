@@ -1,5 +1,4 @@
-# WebApp boilerplate with React JS
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+# SYMP-WEB, the modern symposium
 
 <p align="center">
 <img src="C:\Users\mathe\Downloads\Hello-Rigo-with-Vanillajs.gif" />
