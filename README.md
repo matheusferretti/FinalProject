@@ -22,6 +22,9 @@ Indeed, the FUTURE-IS-FREELANCE, so login asap ;)
 
 Last but not least, we have to be able to search for jobs, freelancers, and/or employers, so why not create searching options for each?
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63252585/100390488-8b49cb80-2ffe-11eb-8331-2c652221191b.gif" />
+</p>
 
 
 ### Requirements:
