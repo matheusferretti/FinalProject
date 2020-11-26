@@ -1,4 +1,4 @@
-<h1 align="center># SYMP-WEB, the modern symposium</h1>
+# SYMP-WEB, the modern symposium
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63252585/100388557-ea0c4680-2ff8-11eb-912e-6d3d79399d99.gif" />
