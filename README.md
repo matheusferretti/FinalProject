@@ -1,7 +1,7 @@
 # SYMP-WEB, the modern symposium
 
 <p align="center">
-![Screenshot 2020-02-09 at 5 08 54 PM](https://github.com/matheusferretti/SYMPWEB-FRONTEND/issues/1#issue-751806183)
+![Gif1](https://github.com/matheusferretti/SYMPWEB-FRONTEND/issues/1#issue-751806183)
 </p>
 
 
