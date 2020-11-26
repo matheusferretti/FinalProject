@@ -1,5 +1,7 @@
 # SYMP-WEB, the modern symposium
 
+Hey fellow developers, welcome to SYMP-WEB!
+
 With the sudden increase in remote job opportunities, this web application was developed aiming a better future for software developers and the labor force as a whole. This platform allows you to be specific when it comes to both recruitment and job applications. 
 
 <p align="center">
