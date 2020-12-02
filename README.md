@@ -3,7 +3,7 @@
 Hey fellow developers, welcome to SYMP-WEB!
 
 <p align="center">
-<img src="C:\Users\mathe\OneDrive\Desktop\SYMP-WEB\lOGOdARK.PNG" />
+<img src="https://user-images.githubusercontent.com/63252585/100933864-f5111c00-34bb-11eb-80a0-7fddefad8c84.PNG" />
 </p>
 
 With the sudden increase in remote job opportunities, this web application was developed aiming a better future for software developers and the labor force as a whole. This platform allows you to be specific when it comes to both recruitment and job applications. SYMP-WEB came out to be a user-friendly and efficiently simple application thanks to the implementation of React.JS, SCSS, and Bootstrap. 
