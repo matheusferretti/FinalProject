@@ -3,13 +3,18 @@ import "../../styles/home.scss";
 import PropTypes from "prop-types";
 
 export const Signup = props => {
+    const [email, setEmail] = useState();
+	const [password, setPassword] = useState();
+    const [username, setUsername] = useState();
+    
 	return (
 		<form>
 			{props.isFreelancer ? (
 				<div>
 					<div className="form-group">
-						<label htmlFor="examplefirstName">First Name</label>
+						<label htmlFor="examplefirstName">Full Name</label>
 						<input
+                            onChange={e => setName(e.target.value)}
 							type="text"
 							className="form-control"
 							id="examplefirstName"
@@ -17,6 +22,16 @@ export const Signup = props => {
 						/>
 					</div>
 					<div className="form-group">
+						<label htmlFor="examplefirstName">Username</label>
+						<input
+                            onChange={e => setUsername(e.target.value)}
+							type="text"
+							className="form-control"
+							id="examplename"
+							placeholder="Enter username"
+						/>
+					</div>
+					{/* <div className="form-group">
 						<label htmlFor="examplelastName">Last Name</label>
 						<input
 							type="text"
@@ -24,7 +39,7 @@ export const Signup = props => {
 							id="examplelastName"
 							placeholder="Enter last name"
 						/>
-					</div>
+					</div> */}
 				</div>
 			) : (
 				<div className="form-group">
@@ -41,6 +56,7 @@ export const Signup = props => {
 			<div className="form-group">
 				<label htmlFor="exampleInputEmail1">Email address</label>
 				<input
+                    onChange={e => setEmail(e.target.value)}
 					type="email"
 					className="form-control"
 					id="exampleInputEmail1"
@@ -50,9 +66,9 @@ export const Signup = props => {
 			</div>
 			<div className="form-group">
 				<label htmlFor="exampleInputPassword1">Password</label>
-				<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+				<input onChange={e => setPassword(e.target.value)} type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
 			</div>
-			<button type="submit" className="btn btn-primary">
+			<button onClick={() => actions.login(email, password, username)} type="submit" className="btn btn-primary">
 				Submit
 			</button>
 		</form>

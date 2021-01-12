@@ -13,6 +13,7 @@ export const Signup = props => {
 				<div className="form-group">
 					<label htmlFor="examplefirstName">Company Name</label>
 					<input
+						onChange
 						type="text"
 						className="form-control"
 						id="examplefirstName"
@@ -21,7 +22,13 @@ export const Signup = props => {
 				</div>
 				<div className="form-group">
 					<label htmlFor="examplelastName">Email address</label>
-					<input type="text" className="form-control" id="examplelastName" placeholder="Enter email" />
+					<input
+						onChange={e => setEmail(e.target.value)}
+						type="text"
+						className="form-control"
+						id="examplelastName"
+						placeholder="Enter email"
+					/>
 				</div>
 				<div className="form-group">
 					<label htmlFor="exampleInputEmail1">Company URL</label>
@@ -35,10 +42,16 @@ export const Signup = props => {
 				</div>
 				<div className="form-group">
 					<label htmlFor="exampleInputPassword1">Password</label>
-					<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+					<input
+						onChange={e => setPassword(e.target.value)}
+						type="password"
+						className="form-control"
+						id="exampleInputPassword1"
+						placeholder="Password"
+					/>
 				</div>
 				<div className="d-flex justify-content-center">
-					<button type="submit" className="btn btn-primary">
+					<button type="button" className="btn btn-primary" onClick={() => actions.signup()}>
 						Submit
 					</button>
 				</div>

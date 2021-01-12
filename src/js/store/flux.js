@@ -189,6 +189,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 				history.push("/profile");
 			},
+			signup: async (email, username, password) => {
+				const store = getStore();
+
+				let user = {
+					username: username,
+					email: email,
+					password: password,
+					is_active: true
+				};
+
+				let response = await fetch("https://3000-e344c25e-db40-4cd4-8969-e24e7ce763fc.ws-us03.gitpod.io/user", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify(user)
+				});
+
+				// let result = await response.json();
+				// alert(result.message);
+			},
 			logout: () => {
 				setStore({
 					currentUser: {
