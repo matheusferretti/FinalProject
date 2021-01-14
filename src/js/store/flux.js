@@ -189,10 +189,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 				history.push("/profile");
 			},
-			signup: async (email, username, password) => {
+			signup2: async (email, username, password) => {
 				const store = getStore();
 
 				let user = {
+					name: name,
 					username: username,
 					email: email,
 					password: password,
