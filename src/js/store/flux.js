@@ -1,10 +1,12 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			token: null,
 			profile: {
 				name: "Matheus",
 				type: "user"
 			},
+			current_user: {},
 			user: {
 				username: "",
 				password: "",
@@ -170,24 +172,103 @@ const getState = ({ getStore, getActions, setStore }) => {
 				//reset the global store
 				setStore({ demo: demo });
 			},
+			// login: (email, password, history) => {
+			// 	//get the store
+			// 	const store = getStore();
+
+			// 	//this is where I fetch, and only will set the store if after fetching I get a 200
+			// 	//reset the global store
+			// 	for (let x of store.users) {
+			// 		if (x.email == email) {
+			// 			setStore({
+			// 				currentUser: {
+			// 					email: email,
+			// 					token: "e1e2e3",
+			// 					userType: x.userType
+			// 				}
+			// 			});
+			// 		}
+			// 	}
+			// 	history.push("/profile");
+			// },
 			login: (email, password, history) => {
 				//get the store
 				const store = getStore();
 
 				//this is where I fetch, and only will set the store if after fetching I get a 200
 				//reset the global store
-				for (let x of store.users) {
-					if (x.email == email) {
-						setStore({
-							currentUser: {
-								email: email,
-								token: "e1e2e3",
-								userType: x.userType
-							}
-						});
+				let user = {
+					email: email,
+					password: password
+				};
+
+				let response = fetch("https://3000-e344c25e-db40-4cd4-8969-e24e7ce763fc.ws-us03.gitpod.io/login", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify(user)
+				})
+					.then(res => res.json())
+					.then(data => setStore({ token: data.access_token }))
+					.then(() => getActions().test());
+			},
+			updateUser: username => {
+				//get the store
+				const store = getStore();
+
+				//this is where I fetch, and only will set the store if after fetching I get a 200
+				//reset the global store
+				let user = {
+					username: username
+				};
+
+				let response = fetch("https://3000-e344c25e-db40-4cd4-8969-e24e7ce763fc.ws-us03.gitpod.io/login", {
+					method: "PUT",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify(user)
+				})
+					.then(res => res.json())
+					.then(data => setStore({ token: data.access_token }))
+					.then(() => getActions().test());
+			},
+			test: () => {
+				//get the store
+				const store = getStore();
+
+				//this is where I fetch, and only will set the store if after fetching I get a 200
+				//reset the global store
+
+				fetch("https://3000-e344c25e-db40-4cd4-8969-e24e7ce763fc.ws-us03.gitpod.io/user/1", {
+					// method: "GET",
+					headers: {
+						"Content-Type": "application/json",
+						authorization: `Bearer ${store.token}`
 					}
-				}
-				history.push("/profile");
+				})
+					.then(res => res.json())
+					.then(data => setStore({ current_user: data }));
+			},
+			signup: async (employer, email, url, password) => {
+				const store = getStore();
+
+				let user = {
+					employer: employer,
+					email: email,
+					url: url,
+					password: password,
+					is_active: true
+				};
+
+				let response = await fetch("https://3000-e344c25e-db40-4cd4-8969-e24e7ce763fc.ws-us03.gitpod.io/user", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify(user)
+				});
 			},
 			signup2: async (email, username, password) => {
 				const store = getStore();

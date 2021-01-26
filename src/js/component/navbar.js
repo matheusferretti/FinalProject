@@ -15,16 +15,21 @@ export const Navbar = () => {
 			</Link>
 			<div className="ml-auto d-flex">
 				<div className="m-2">
-					{store.currentUser.token == null ? (
+					{store.token == null ? (
 						<Link to="/login">
 							<button className="btn btn-primary">LOG-IN</button>
 						</Link>
 					) : (
-						<Link to="/login">
-							<button onClick={() => actions.logout()} className="btn btn-primary">
-								LOG-OUT
-							</button>
-						</Link>
+						<>
+							<Link to="/login">
+								<button onClick={() => actions.logout()} className="btn btn-primary">
+									LOG-OUT
+								</button>
+							</Link>
+							<Link to="/profile">
+								<button className="btn btn-primary">PROFILE</button>
+							</Link>
+						</>
 					)}
 				</div>
 				<div className="m-2">

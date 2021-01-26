@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { Context } from "../store/appContext";
 import gitHub from "../../img/github.png";
 
 export const Mock2 = () => {
+	const { store, actions } = useContext(Context);
+	const [user, setUser] = useState({
+		username: ""
+	});
+
 	return (
 		<div>
 			<div className="card float-left m-2" style={{ width: "18rem" }}>
@@ -9,6 +15,21 @@ export const Mock2 = () => {
 				<div className="card-body">
 					<h5 className="card-title">GitHub</h5>
 					<p className="card-text">Repository Hosting Services</p>
+				</div>
+				<div className="input-group mb-3">
+					<input
+						value={store.current_user.username}
+						type="text"
+						className="form-control"
+						placeholder="Recipient's username"
+						aria-label="Recipient's username"
+						aria-describedby="button-addon2"
+					/>
+					<div className="input-group-append">
+						<button className="btn btn-outline-secondary" type="button" id="button-addon2">
+							Button
+						</button>
+					</div>
 				</div>
 				<ul className="list-group list-group-flush">
 					<li className="list-group-item">5 Stars</li>

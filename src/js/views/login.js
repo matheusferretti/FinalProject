@@ -19,7 +19,7 @@ export const Login = () => {
 				style={{ width: "200px;", height: "200px" }}
 			/>
 			<div className="d-flex justify-content-center">
-				<form className="mx-auto" style={{ width: "500px;" }}>
+				<div className="mx-auto" style={{ width: "500px;" }}>
 					<div className="form-group">
 						<div className="col-xs-4">
 							<label htmlFor="exampleInputEmail1" />
@@ -48,12 +48,17 @@ export const Login = () => {
 					<div className="d-flex justify-content-center">
 						<button
 							onClick={() => actions.login(email, password, history)}
-							type="submit"
+							type="button"
 							className="btn btn-primary">
 							Submit
 						</button>
 					</div>
-				</form>
+					{/* <div className="d-flex justify-content-center">
+						<button onClick={() => actions.test()} type="button" className="btn btn-primary">
+							Submit
+						</button>
+					</div> */}
+				</div>
 			</div>
 		</div>
 	);

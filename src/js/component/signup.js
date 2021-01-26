@@ -4,6 +4,11 @@ import "../../styles/home.scss";
 import logoDraft from "../../img/LogoDraft.jpg";
 
 export const Signup = props => {
+	const [employer, setEmployer] = useState();
+	const [email, setEmail] = useState();
+	const [password, setPassword] = useState();
+	const [url, setUrl] = useState();
+
 	return (
 		<div className="d-flex justify-content-center mt-5">
 			<form className="border" style={{ width: "25rem", padding: "80px" }}>
@@ -11,33 +16,24 @@ export const Signup = props => {
 					<img src={logoDraft} style={{ width: "20rem", height: "80px" }} />
 				</div>
 				<div className="form-group">
-					<label htmlFor="examplefirstName">Company Name</label>
+					<label htmlFor="examplefirstName">Employer Name</label>
 					<input
-						onChange
+						onChange={e => setEmployer(e.target.value)}
 						type="text"
 						className="form-control"
 						id="examplefirstName"
-						placeholder="Enter company name"
+						placeholder="Enter name"
 					/>
 				</div>
 				<div className="form-group">
-					<label htmlFor="examplelastName">Email address</label>
+					<label htmlFor="exampleInputEmail1">Email address</label>
 					<input
 						onChange={e => setEmail(e.target.value)}
-						type="text"
-						className="form-control"
-						id="examplelastName"
-						placeholder="Enter email"
-					/>
-				</div>
-				<div className="form-group">
-					<label htmlFor="exampleInputEmail1">Company URL</label>
-					<input
 						type="email"
 						className="form-control"
 						id="exampleInputEmail1"
 						aria-describedby="emailHelp"
-						placeholder="URL"
+						placeholder="Enter email"
 					/>
 				</div>
 				<div className="form-group">
@@ -50,8 +46,21 @@ export const Signup = props => {
 						placeholder="Password"
 					/>
 				</div>
+				<div className="form-group">
+					<label htmlFor="exampleInputPassword1">Company URL</label>
+					<input
+						onChange={e => setUrl(e.target.value)}
+						type="text"
+						className="form-control"
+						id="examplefirstName"
+						placeholder="Enter name"
+					/>
+				</div>
 				<div className="d-flex justify-content-center">
-					<button type="button" className="btn btn-primary" onClick={() => actions.signup()}>
+					<button
+						onClick={() => actions.signup(email, employer, url, password)}
+						type="submit"
+						className="btn btn-primary">
 						Submit
 					</button>
 				</div>

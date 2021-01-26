@@ -1,8 +1,33 @@
-# WebApp boilerplate with React JS
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+# SYMP-WEB, the modern symposium
+
+Hey fellow developers, welcome to SYMP-WEB!
 
 <p align="center">
-<a href="https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b"><img src="https://github.com/4GeeksAcademy/react-hello-webapp/blob/master/src/img/how-to.png?raw=true" /></a>
+<img src="https://user-images.githubusercontent.com/63252585/100933864-f5111c00-34bb-11eb-80a0-7fddefad8c84.PNG" />
+</p>
+
+With the sudden increase in remote job opportunities, this web application was developed aiming a better future for software developers and the labor force as a whole. This platform allows you to be specific when it comes to both recruitment and job applications. SYMP-WEB came out to be a user-friendly and efficiently simple application thanks to the implementation of React.JS, SCSS, and Bootstrap. 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63252585/100388557-ea0c4680-2ff8-11eb-912e-6d3d79399d99.gif" />
+</p>
+
+With S/W, you have the option to sign up as a freelancer or as an employer:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63252585/100390302-dd3e2180-2ffd-11eb-8885-753b791c67ed.gif" />
+</p>
+
+Indeed, the FUTURE-IS-FREELANCE, so login asap ;)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63252585/100390404-3d34c800-2ffe-11eb-94b6-c29d7960c80a.gif" />
+</p>
+
+Last but not least, we have to be able to search for jobs, freelancers, and/or employers, so why not create searching options for each?
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63252585/100390488-8b49cb80-2ffe-11eb-8331-2c652221191b.gif" />
 </p>
 
 
