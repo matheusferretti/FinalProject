@@ -1,14 +1,82 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { Context } from "../store/appContext";
 import mat2 from "../../img/mat2.png";
 
 export const Mock = () => {
+	const { store, actions } = useContext(Context);
+
+	const [user, setUser] = useState({
+		name: "",
+		username: "",
+		headline: "",
+		email: ""
+	});
+
 	return (
 		<div>
 			<div className="card float-left m-2" style={{ width: "18rem" }}>
 				<img src={mat2} className="img-thumbnail" style={{ width: "285px", height: "285px" }} alt="" />
 				<div className="card-body">
-					<h5 className="card-title">Matheus Ferretti</h5>
-					<p className="card-text">Python Developer</p>
+					<h5 className="card-title">
+						<input
+							onChange={e => setUser({ ...user, name: e.target.value })}
+							type="text"
+							className="form-control"
+							placeholder="Full Name"
+						/>
+						<button
+							onClick={() => actions.updateUser(user.name)}
+							type="button"
+							className="btn btn-primary form-control">
+							{" "}
+							Save
+						</button>
+					</h5>
+					<p className="card-text">
+						<input
+							onChange={e => setUser({ ...user, username: e.target.value })}
+							type="text"
+							className="form-control"
+							placeholder="Username"
+						/>
+						<button
+							onClick={() => actions.updateUser(user.username)}
+							type="button"
+							className="btn btn-primary form-control">
+							{" "}
+							Save
+						</button>
+					</p>
+					<p className="card-text">
+						<input
+							onChange={e => setUser({ ...user, headline: e.target.value })}
+							type="text"
+							className="form-control"
+							placeholder="Headline"
+						/>
+						<button
+							onClick={() => actions.updateUser(user.headline)}
+							type="button"
+							className="btn btn-primary form-control">
+							{" "}
+							Save
+						</button>
+					</p>
+					<p className="card-text">
+						<input
+							onChange={e => setUser({ ...user, email: e.target.value })}
+							type="email"
+							className="form-control"
+							placeholder="Email"
+						/>
+						<button
+							onClick={() => actions.updateUser(user.email)}
+							type="button"
+							className="btn btn-primary form-control">
+							{" "}
+							Save
+						</button>
+					</p>
 				</div>
 				<ul className="list-group list-group-flush">
 					<li className="list-group-item">Full-Stack Developer</li>

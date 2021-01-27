@@ -213,14 +213,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(data => setStore({ token: data.access_token }))
 					.then(() => getActions().test());
 			},
-			updateUser: username => {
+			updateUser: (username, name, email, headline) => {
 				//get the store
 				const store = getStore();
 
 				//this is where I fetch, and only will set the store if after fetching I get a 200
 				//reset the global store
 				let user = {
-					username: username
+					username: username,
+					full_name: name,
+					email: email,
+					headline: headline
 				};
 
 				let response = fetch("https://3000-e344c25e-db40-4cd4-8969-e24e7ce763fc.ws-us03.gitpod.io/login", {
@@ -234,6 +237,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(data => setStore({ token: data.access_token }))
 					.then(() => getActions().test());
 			},
+			// editUser: (username, name, email, headline, id) => {
+			// 	fetch("https://3000-e344c25e-db40-4cd4-8969-e24e7ce763fc.ws-us03.gitpod.io/login" + id, {
+			// 		method: "PUT",
+			// 		headers: { "Content-Type": "application/json" },
+			// 		body: JSON.stringify({
+			// 			agenda_slug: "Matheus_FerrettiMonteiro",
+			// 			full_name: name,
+			// 			email: email,
+			// 			username: username,
+			// 			headline: headline,
+			// 		})
+			// 	})
+			// 		.then(response => response.json())
+			// 		.then(() => {
+			// 			fetch("https://assets.breatheco.de/apis/fake/contact/agenda/Matheus_FerrettiMonteiro")
+			// 				.then(response => response.json())
+			//                 .then(data => setStore({ token: data.access_token }))
+			//                 .then(() => getActions().test());
+			// 			console.log("Edited");
+			// 		});
+			// },
 			test: () => {
 				//get the store
 				const store = getStore();

@@ -5,7 +5,10 @@ import gitHub from "../../img/github.png";
 export const Mock2 = () => {
 	const { store, actions } = useContext(Context);
 	const [user, setUser] = useState({
-		username: ""
+		name: "",
+		username: "",
+		headline: "",
+		email: ""
 	});
 
 	return (
