@@ -6,5 +6,5 @@ import { Context } from "../store/appContext";
 export const Profile = () => {
 	const { store, actions } = useContext(Context);
 
-	return <div>{store.currentUser.userType == "freelancer" ? <Mock /> : <Mock2 />}</div>;
+	return <div>{store.current_user.userType == "freelancer" ? <Mock /> : <Mock2 />}</div>;
 };

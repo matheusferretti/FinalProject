@@ -27,7 +27,9 @@ export const Navbar = () => {
 								</button>
 							</Link>
 							<Link to="/profile">
-								<button className="btn btn-primary">PROFILE</button>
+								<button onClick={() => actions.userInfo()} className="btn btn-primary">
+									PROFILE
+								</button>
 							</Link>
 						</>
 					)}

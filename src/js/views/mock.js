@@ -24,13 +24,6 @@ export const Mock = () => {
 							className="form-control"
 							placeholder="Full Name"
 						/>
-						<button
-							onClick={() => actions.updateUser(user.name)}
-							type="button"
-							className="btn btn-primary form-control">
-							{" "}
-							Save
-						</button>
 					</h5>
 					<p className="card-text">
 						<input
@@ -39,13 +32,6 @@ export const Mock = () => {
 							className="form-control"
 							placeholder="Username"
 						/>
-						<button
-							onClick={() => actions.updateUser(user.username)}
-							type="button"
-							className="btn btn-primary form-control">
-							{" "}
-							Save
-						</button>
 					</p>
 					<p className="card-text">
 						<input
@@ -54,13 +40,6 @@ export const Mock = () => {
 							className="form-control"
 							placeholder="Headline"
 						/>
-						<button
-							onClick={() => actions.updateUser(user.headline)}
-							type="button"
-							className="btn btn-primary form-control">
-							{" "}
-							Save
-						</button>
 					</p>
 					<p className="card-text">
 						<input
@@ -70,7 +49,7 @@ export const Mock = () => {
 							placeholder="Email"
 						/>
 						<button
-							onClick={() => actions.updateUser(user.email)}
+							onClick={() => actions.updateUser(user)}
 							type="button"
 							className="btn btn-primary form-control">
 							{" "}
